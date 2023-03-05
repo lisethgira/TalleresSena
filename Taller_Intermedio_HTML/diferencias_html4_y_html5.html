@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <div style="background-color: black;">
+        <button style="margin-left: 20px;"><a href="HipervinculosEjercicios.html"
+            style="background-image: url(src/image/fondoHipervinculo.avif);">Ir a hipervinculos</a></button>
+    </div>
     <h1>Diferencias entre HTML 4 y HTML 5:</h1>
     <ol>
         <li>
@@ -47,19 +51,203 @@
     <p>En resumen, HTML 5 ofrece una serie de mejoras significativas en términos de semántica, funcionalidad y facilidad
         de uso en comparación con HTML 4.</p>
 
-    <table >
-        <colgroup span="2" class="columns"></colgroup>
-        <thead>
-            
-              <th><h2> Diferencias entre HTML 4 y HTML 5</h2></th>
-            
-          </thead>
-          <thbody>
+    <table>
+        <thead style="display: flex; justify-content: center;">
+            <caption><h2> Diferencias entre HTML 4 y HTML 5</h2></caption>
+        </thead>
+        <thbody>
+            <colgroup span="2" class="columns"></colgroup>
             <tr>
-                <th> <h2> HTML 4 </h2></th>
-                <th> <h2> HTML 5</h2></th>
-              </tr>
-          </thbody>
+                <th>
+                    <h2> HTML 4 </h2>
+                </th>
+                <th>
+                    <h2> HTML 5</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>Este ejemplo incluye una estructura básica de página web, que consta de una etiqueta head con un
+                    título y una etiqueta body con un encabezado, un párrafo, una lista y una tabla. También se incluye
+                    una etiqueta meta para especificar la codificación de caracteres. El Doctype define el estándar HTML
+                    4.01 Strict.</td>
+                <td>Este ejemplo también incluye una estructura básica de página web, pero utiliza elementos semánticos
+                    de HTML 5, como header, nav, section y footer. También se agregó un atributo lang para especificar
+                    el idioma de la página. En lugar de la etiqueta meta para especificar la codificación de caracteres,
+                    se utiliza el atributo charset en la etiqueta meta dentro de la sección head. Además, la tabla ahora
+                    tiene elementos thead y tbody.</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                    "http://www.w3.org/TR/html4/strict.dtd">
+                    <br>
+                    &lt;html>
+                    <br>
+                    &lt;head>
+                    <br>
+                    &lt;title>Ejemplo de HTML 4&lt;/title>
+                    <br>
+                    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    <br>
+                    &lt;/head>
+                    <br>
+                    &lt;body>
+                    <br>
+                    &lt;h1>Bienvenido a mi sitio web&lt;/h1>
+                    <br>
+                    &lt;p>Este es un ejemplo de página web creada con HTML 4.&lt;/p>
+                    <br>
+                    &lt;ul>
+                    <br>
+                    &lt;li>Item 1&lt;/li>
+                    <br>
+                    &lt;li>Item 2&lt;/li>
+                    <br>
+                    &lt;li>Item 3&lt;/li>
+                    <br>
+                    &lt;/ul>
+                    <br>
+                    &lt;table>
+                    <br>
+                    &lt;tr>
+                    <br>
+                    &lt;th>Nombre&lt;/th>
+                    <br>
+                    &lt;th>Apellido&lt;/th>
+                    <br>
+                    &lt;/tr>
+                    <br>
+                    &lt;tr>
+                    <br>
+                    &lt;td>John&lt;/td>
+                    <br>
+                    &lt;td>Doe&lt;/td>
+                    <br>
+                    &lt;/tr>
+                    <br>
+                    &lt;tr>
+                    <br>
+                    &lt;td>Jane&lt;/td>
+                    <br>
+                    &lt;td>Smith&lt;/td>
+                    <br>
+                    &lt;/tr>
+                    <br>
+                    &lt;/table>
+                    <br>
+                    &lt;/body>
+                    <br>
+                    &lt;/html>
+                    <br>
+                    </code>
+                </td>
+                <td>
+                    <code>
+                        <br>
+                        <br>
+                        &lt;!DOCTYPE html>
+                        <br>
+                        &lt;html lang="es">
+                        <br>
+                        &lt;head>
+                        <br>
+                        &lt;meta charset="UTF-8">
+                        <br>
+                        &lt;title>Ejemplo de HTML 5&lt;/title>
+                        <br>
+                        &lt;/head>
+                        <br>
+                        &lt;body>
+                        <br>
+                        &lt;header>
+                        <br>
+                        &lt;h1>Bienvenido a mi sitio web&lt;/h1>
+                        <br>
+                        &lt;nav>
+                        <br>
+                        &lt;ul>
+                        <br>
+                        &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+                        <br>
+                        &lt;li>&lt;a href="#">Acerca de&lt;/a>&lt;/li>
+                        <br>
+                        &lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+                        <br>
+                        &lt;/ul>
+                        <br>
+                        &lt;/nav>
+                        <br>
+                        &lt;/header>
+                        <br>
+                        &lt;section>
+                        <br>
+                        &lt;h2>Sobre nosotros&lt;/h2>
+                        <br>
+                        &lt;p>Este es un ejemplo de página web creada con HTML 5&lt;/p>
+                        <br>
+                        &lt;ul>
+                        <br>
+                        &lt;li>Item 1&lt;/li>
+                        <br>
+                        &lt;li>Item 2&lt;/li>
+                        <br>
+                        &lt;li>Item 3&lt;/li>
+                        <br>
+                        &lt;/ul>
+                        <br>
+                        &lt;table>
+                        <br>
+                        &lt;thead>
+                        <br>
+                        &lt;tr>
+                        <br>
+                        &lt;th>Nombre&lt;/th>
+                        <br>
+                        &lt;th>Apellido&lt;/th>
+                        <br>
+                        &lt;/tr>
+                        <br>
+                        &lt;/thead>
+                        <br>
+                        &lt;tbody>
+                        <br>
+                        &lt;tr>
+                        <br>
+                        &lt;td>John&lt;/td>
+                        <br>
+                        &lt;td>Doe&lt;/td>
+                        <br>
+                        &lt;/tr>
+                        <br>
+                        &lt;tr>
+                        <br>
+                        &lt;td>Jane&lt;/td>
+                        <br>
+                        &lt;td>Smith&lt;/td>
+                        <br>
+                        &lt;/tr>
+                        <br>
+                        &lt;/tbody>
+                        <br>
+                        &lt;/table>
+                        <br>
+                        &lt;/section>
+                        <br>
+                        &lt;footer>
+                        <br>
+                        &lt;p>Derechos reservados &copy; 2023&lt;/p>
+                        <br>
+                        &lt;footer>
+                        <br>
+                        &lt;/body>
+                        <br>
+                        &lt;/html>
+                        <br>
+                        <br>
+                    </code>
+                </td>
+            </tr>
+        </thbody>
     </table>
 </body>
 
