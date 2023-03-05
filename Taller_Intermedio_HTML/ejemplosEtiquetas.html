@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Etiquetas</title>
+</head>
+
+<body>
+    <h1>Ejemplos de Etiquetas</h1>
+    <hr>
+    <div>
+        <h2>Etiqueta <code>&lt;mark></code>: </h2>
+        <p>La etiqueta <code>&lt;mark></code> se utiliza para resaltar un fragmento de texto en el contenido. Aquí hay
+            un ejemplo:</p>
+        <code>&lt;p>Este es un párrafo de ejemplo&lt;mark>resaltado&lt;/mark>&lt;/p></code>
+        <p>Este es un párrafo de ejemplo <mark>resaltado</mark>.</p>
+    </div>
+    <br>
+    <div>
+        <h2>Etiqueta <code>&lt;meter></code>: </h2>
+        <p>La etiqueta <code>&lt;meter</code> se utiliza para mostrar una medida en una escala. Aquí hay un ejemplo:</p>
+        <code>&lt;p>Calificación:&lt;meter value="8" min="0" max="10">8 de 10&lt;/meter>&lt;/p></code>
+        <p>Calificación: <meter value="8" min="0" max="10">8 de 10</meter></p>
+        <p> En este ejemplo, el atributo "value" especifica el valor de la medida, mientras que los atributos "min" y
+            "max" definen los límites inferior y superior de la escala.</p>
+    </div>
+    <br>
+    <div>
+        <h2>Etiqueta <code>&lt;dialog></code>:</h2>
+        <p>La etiqueta <code>&lt;dialog></code> se utiliza para crear una ventana emergente o un diálogo en la página.
+            Aquí hay un ejemplo: </p>
+        <code>&lt;dialog open>&lt;h3>¿Estás seguro?&lt;/h3>&lt;p>¿Quieres eliminar este archivo?&lt;/p>&lt;button>Cancelar&lt;/button>&lt;button>Eliminar&lt;/button>&lt;/dialog></code>
+        <div>
+            <dialog open style="right:80%; top:70% ; text-align-last: center;">
+                <h2>¿Estás seguro?</h2>
+                <p>¿Quieres eliminar este archivo?</p>
+                <button>Cancelar</button>
+                <button>Eliminar</button>
+            </dialog>
+        </div>
+        <p>En este ejemplo, el contenido del diálogo se incluye entre las etiquetas <code>&lt;dialog></code> y
+            <code>&lt;/dialog></code>. Los botones proporcionan opciones para el usuario.
+        </p>
+    </div>
+    <br>
+    <div style="margin-top: 190px;">
+        <h2>Etiqueta <code>&lt;time></code>:</h2>
+        <p>La etiqueta <code>&lt;time></code> se utiliza para mostrar una fecha y hora. Aquí hay un ejemplo:</p>
+        <code>&lt;p>Publicado: &lt;time datetime="2022-05-23T12:34:56Z">23 de mayo de 2022&lt;/time>&lt;/p></code>
+        <p>Publicado: <time datetime="2022-05-23T12:34:56Z">23 de mayo de 2022</time></p>
+        <p>En este ejemplo, el atributo "datetime" se utiliza para especificar la fecha y hora en formato ISO 8601. El
+            contenido visible del elemento es el texto "23 de mayo de 2022".</p>
+    </div>
+    <br>
+    <div>
+        <h2>Etiqueta <code>&lt;figure></code> y Etiqueta <code>&lt;figcaption></code> :</h2>
+        <p>La etiqueta <code>&lt;figure></code> se utiliza para agrupar contenido multimedia y proporcionar una leyenda.</p>
+        <p>La etiqueta <code>&lt;figcaption></code> se utiliza para proporcionar una leyenda o descripción para el contenido multimedia agrupado por la etiqueta <code>&lt;figure></code>.</p>
+
+        <p>Aquí hay un ejemplo:</p>
+
+        <code>&lt;figure>&lt;img src="src/image/imagen.jpg" alt="Cohete Rojo" style="border: 1px solid black; width: 200px;">&lt;figcaption>Figura 1: Cohete rojo.&lt;/figcaption>&lt;/figure></code>
+        <figure>
+            <img src="src/image/imagen.jpg" alt="Cohete Rojo" style="border: 1px solid black; width: 200px;">
+            <figcaption>Figura 1: Cohete rojo.</figcaption>
+        </figure>
+    </div>
+<br>
+<div>
+
+</div>
+</body>
+
+</html>

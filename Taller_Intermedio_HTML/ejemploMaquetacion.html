@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de maquetación HTML</title>
+
+</head>
+
+<body>
+    <header>
+        <div style="background-color: #333; color: #fff; padding: 10px; text-align: center;">
+            <h1 >Tienda en línea</h1>
+            <nav style="display: flex; justify-content:center">
+                <ul style="list-style: none; display: inline-block;">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #fff; text-decoration: none;">Inicio</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #fff; text-decoration: none;">Productos</a></li>
+                    <li style="display: inline-block;"><a href="#"
+                            style="color: #fff; text-decoration: none;">Contacto</a></li>
+                </ul>
+            </nav>
+            <form action="#" method="get" style="display: inline-block; margin-left: 10px;">
+                <input type="text" name="search" placeholder="Buscar productos..." style="padding: 5px;">
+                <button type="submit" style="background-color: #fff; color: #333; padding: 5px;">Buscar</button>
+            </form>
+        </div>
+
+    </header>
+    <main style="display: flex;">
+        <aside style=" margin-top: 50px;">
+            <div style="width: 100%; background-color: #f2f2f2; padding: 10px;">
+                <h2 style="display: flex; justify-content:center">Categorías</h2>
+                <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content:center">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #333; text-decoration: none;">Ropa</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #333; text-decoration: none;">Calzado</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #333; text-decoration: none;">Accesorios</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="color: #333; text-decoration: none;">Deportes</a></li>
+                </ul>
+
+                <div style="display: flex; justify-content:center ; margin-top: 20px;">
+                    <div style="width: 70%; background-color: #fff; padding: 10px; ">
+                        <h2 style="display: flex; justify-content:center">Producto destacado</h2>
+                        <div style="display: flex; justify-content:center">
+                            <img src="https://via.placeholder.com/400x400.png?text=Producto+destacado"
+                            alt="Producto destacado" style="max-width: 100%; height: auto;">
+                        </div>
+                        <p style="margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse
+                            vehicula, ipsum eget ullamcorper mollis, nibh nibh aliquet enim, vel tristique nulla sapien
+                            sed
+                            felis.</p>
+                        <div style="display: flex; justify-content:center">
+                            <button style="background-color: #333; color: #fff; padding: 5px; ">Agregar al
+                                carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section style="margin-left: 50px; margin-right: 20px;">
+            <div style="display: flex; justify-content: space-between;margin-top: 50px;">
+                <div style="width: 100%; background-color: #f2f2f2; padding: 10px;">
+                    <h2>Filtrar por precio</h2>
+                    <form action="#" method="get">
+                        <div>
+                            <label for="precio_minimo">Precio mínimo:</label>
+                            <input type="number" name="precio_minimo" id="precio_minimo" min="0" step="0.01"
+                                style="padding: 5px;">
+                        </div>
+                        <div>
+                            <label for="precio_maximo" style="margin-left: 10px;">Precio máximo:</label>
+                            <input type="number" name="precio_maximo" id="precio_maximo" min="0" step="0.01"
+                                style="padding: 5px;">
+                        </div>
+                        <div style="margin-top: 10px; display: flex; justify-content:center">
+                            <button type="submit"
+                            style="background-color: #333; color: #fff; padding: 5px;">Filtrar</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+        <section style=" margin-top: 15px;">
+            <div style="width: 100%; background-color: #fff; padding: 10px;">
+                <h2>Productos</h2>
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <div style="display: flex;">
+                            <img src="https://via.placeholder.com/100x100.png?text=Producto" alt="Producto"
+                                style="max-width: 100%; height: auto;">
+                            <div style="margin-left: 10px;">
+                                <h3>Producto 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, ipsum
+                                    eget ullamcorper mollis, nibh nibh aliquet enim, vel tristique nulla sapien sed
+                                    felis.</p>
+                                <p style="font-weight: bold; margin-bottom: 5px;">$50.00</p>
+                                <button style="background-color: #333; color: #fff; padding: 5px;">Agregar al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <div style="display: flex;">
+                            <img src="https://via.placeholder.com/100x100.png?text=Producto" alt="Producto"
+                                style="max-width: 100%; height: auto;">
+                            <div style="margin-left: 10px;">
+                                <h3>Producto 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, ipsum
+                                    eget ullamcorper mollis, nibh nibh aliquet enim, vel tristique nulla sapien sed
+                                    felis.</p>
+                                <p style="font-weight: bold; margin-bottom: 5px;">$25.00</p>
+                                <button style="background-color: #333; color: #fff; padding: 5px;">Agregar al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <div style="display: flex;">
+                            <img src="https://via.placeholder.com/100x100.png?text=Producto" alt="Producto"
+                                style="max-width: 100%; height: auto;">
+                            <div style="margin-left: 10px;">
+                                <h3>Producto 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, ipsum
+                                    eget ullamcorper mollis, nibhnibh aliquet enim, vel tristique nulla sapien sed
+                                    felis.</p>
+                                <p style="font-weight: bold; margin-bottom: 5px;">$35.00</p>
+                                <button style="background-color: #333; color: #fff; padding: 5px;">Agregar al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <div style="display: flex;">
+                            <img src="https://via.placeholder.com/100x100.png?text=Producto" alt="Producto"
+                                style="max-width: 100%; height: auto;">
+                            <div style="margin-left: 10px;">
+                                <h3>Producto 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, ipsum
+                                    eget ullamcorper mollis, nibh nibh aliquet enim, vel tristique nulla sapien sed
+                                    felis.</p>
+                                <p style="font-weight: bold; margin-bottom: 5px;">$45.00</p>
+                                <button style="background-color: #333; color: #fff; padding: 5px;">Agregar al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer style="display: flex; justify-content:center">
+        <p>&copy; 2023 Tienda en línea. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

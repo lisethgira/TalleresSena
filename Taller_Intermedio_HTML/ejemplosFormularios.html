@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Formularios</title>
+</head>
+
+<body>
+    <h3>Ejemplo 1</h3>
+    <h1>Formulario de contacto</h1>
+    <div style="background-color: rosybrown; width: 20%">
+        <form action="process.php" method="post" style="margin-left: 25%;">
+            <div>
+                <div><label for="name">Nombre:</label></div>
+                <div><input type="text" id="name" name="name" required></div>
+            </div>
+    
+            <div>
+                <div><label for="email">Correo electrónico:</label></div>
+                <div><input type="text" id="name" name="name" required></div>
+            </div>
+    
+            <div>
+                <div><label for="message">Mensaje:</label></div>
+                <div><textarea id="message" name="message" required></textarea></div>
+            </div>
+    
+            <div style="margin-top: 10px;">
+                <button type="submit">Enviar mensaje</button>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <h3>Ejemplo 2</h3>
+    <h1>Formulario de registro de usuario</h1>
+    <div>
+        <form action="process.php" method="post">
+            <div style="background-color: gray; width: 20% ">
+                <div style="margin-left: 25%; ">
+                    <div style="display: inline-block; ">
+                        <div><label for="username">Nombre de usuario:</label></div>
+                        <div><input type="text" id="username" name="username" required></div>
+                    </div>
+    
+                    <div style="display: inline-block; ">
+                        <div><label for="password">Contraseña:</label></div>
+                        <div><input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+    
+                    <div style="display: inline-block;">
+                        <div><label for="confirm-password">Confirmar contraseña:</label></div>
+                        <div><input type="password" id="confirm-password"
+                                name="confirm-password" required></div>
+                    </div>
+    
+                    <div style="display: inline-block;">
+                        <div><label for="email">Correo electrónico:</label></div>
+                        <div><input type="email" id="email" name="email" required></div>
+                    </div>
+    
+                    <div style="margin-top: 10px; padding-bottom: 10px;">
+                        <button type="submit">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <h3>Ejemplo 3</h3>
+    <h1>Formulario de búsqueda</h1>
+    <div style="background-color: burlywood; width: 20%">
+        <form action="search.php" method="get">
+            <label for="search">Buscar:</label>
+            <input type="text" id="search" name="search" required>
+
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+
+</html>
