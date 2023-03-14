@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con bloque de estilo</title>
+    <style type="text/css">
+        Body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-small;
+            margin-left: 0.25in;
+            margin-right: 0.25in;
+        }
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14pt;
+            color: red;
+        }
+        b, td {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-small;
+            color: white;
+            background-color: #0080C0;
+        }
+        pre, tt, code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 9pt;
+            color: maroon;
+        }
+       
+    </style>
+</head>
+<body bgcolor="white">
+<h2>Prueba de definición de estilos en un bloque aparte</h2>
+<p>
+Como puede verse, la apariencia de esta página queda completamente definida por los estilos que hemos específicado
+en el bloque &lt;style> en la cabecera del documento, los márgenes más amplios de lo habitual,la <b> &lt;b> - negrita </b> tiene 
+un tamaño  y un color fijos, los trozos de texto en teletipo como <tt> &lt;tt> - este fragmento</tt> también tienen definida su fuente, 
+tamaño y color, y vamos a ver como quedan las tablas, para finalizar el ejemplo:
+</p>
+ <center>
+    <table border="1" cellspacing="2" cellspadding="2" >
+        <tr>
+            <th>
+             Cabecera 1
+            </th>
+            <th>
+             Cabecera 2
+            </th>
+        </tr>
+        <tr>
+            <td>
+             Celda (1,1)
+            </td>
+            <td>
+            Celda (1,2)
+            </td>
+        </tr>
+    </table>
+ </center>
+</body>
+</html>
