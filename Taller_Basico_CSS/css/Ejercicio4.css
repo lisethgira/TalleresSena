@@ -1,0 +1,35 @@
+#menuhorizontal, #menuvertical {
+    margin: 5px;
+    padding: 15px;
+    list-style-type: none;
+}
+
+#menuhorizontal a {
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #ff0000;
+    background-color: #f7f8e8;
+    padding: 3px 5px;
+    border-right: 1px solid blue;
+    display: block;
+}
+
+#menuhorizontal li {
+    float: left;
+}
+
+#menuhorizontal a:hover, #menuvertical a:hover {
+    background-color: #336699;
+}
+
+#menuvertical a {
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #ff0000;
+    background-color: #f7f8e8;
+    padding: 3px 5px;
+    border-right: 1px solid blue;
+    display: block;
+}

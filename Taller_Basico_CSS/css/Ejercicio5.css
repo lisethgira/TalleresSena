@@ -1,0 +1,18 @@
+p{
+    background: crimson;
+}/*especificidad de 1 punto*/
+.par{
+    background: pink;
+}/*especificidad de 10 punto*/
+p.par{
+    background: maroon;
+}/*especificidad de 11 punto*/
+#parr{
+    background: orange;
+}/*especificidad de 100 punto*/
+p#parr{
+    background: red;
+}/*especificidad de 101 punto*/
+p.par#parr{
+    background: green;
+}/*especificidad de 111 punto*/

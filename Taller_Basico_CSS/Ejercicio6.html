@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página con estilos</title>
+    <style type="text/css">
+        /*codigo  a :  le da color al cuerpo de la pagina y le pone un background*/ 
+       
+        /* body{
+            color:purple;
+            background-color: #d8da3d;
+        } */
+
+        /*codigo  b :  le da color al cuerpo de la pagina y le pone un background le da etilo 
+        de letra al cuerpo y uno diferente para el titulo*/ 
+
+       /* body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:purple;
+            background-color: #d8da3d;
+        }
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif,;
+        } */
+
+        /*codigo  c :  a las propiedades anteriores le da un padding al cuerpo del lado izquierdo
+        y agrega estilo a la lista*/ 
+
+        /* body{
+            padding-left: 11em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:purple;
+            background-color: #d8da3d;
+        }
+        ul.navbar{
+            position:absolute;
+            top:2em;
+            left: 1em;
+            width: 9em;
+        }
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif,;
+        } */
+
+        /*codigo  d :  a las propiedades anteriores le agrega estilos al cuerpo del link*/ 
+        
+         /* body{
+            padding-left: 11em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #46B4CD;
+            background-color: blue;
+        }
+        ul.navbar{
+            list-style-type:none;
+            padding: 0;
+            margin:0;
+            position:absolute;
+            top:2em;
+            left: 1em;
+            width: 9em;
+        }
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif,;
+        } 
+        ul.navbar li{
+            background: white;
+            margin: 0.5em 0;
+            padding: 0.3em;
+            border-right: 1em solid black;
+        }
+        ul.navbar a {
+            text-decoration: none;
+        }  
+        a:link {
+            //color: rgb(12,40,42);
+            color: blue;
+        }
+        a:visited{
+            //color: rgb(194, 188, 218);
+            color: purple;
+        } */
+
+
+        /*codigo  e :  a las propiedades anteriores le agrega estilos al adress*/ 
+        
+        body{
+            padding-left: 11em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: purple;
+            background-color: #d8da3d;
+        }
+        ul.navbar{
+            list-style-type:none;
+            padding: 0;
+            margin:0;
+            position:absolute;
+            top:2em;
+            left: 1em;
+            width: 9em;
+        }
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif,;
+        } 
+        ul.navbar li{
+            background: white;
+            margin: 0.5em 0;
+            padding: 0.3em;
+            border-right: 1em solid black;
+        }
+        ul.navbar a {
+            text-decoration: none;
+        }  
+        a:link {
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        } 
+        address{
+            margin-top: 1em;
+            padding-top: 1em;
+            border-top: thin dotted
+        }
+
+
+        /*codigo f :  a las propiedades anteriores le quita los estilos al adress*/ 
+        
+        /* body{
+            padding-left: 11em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: purple;
+            background-color: #d8da3d;
+        }
+        ul.navbar{
+            list-style-type:none;
+            padding: 0;
+            margin:0;
+            position:absolute;
+            top:2em;
+            left: 1em;
+            width: 9em;
+        }
+        h1{
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif,;
+        } 
+        ul.navbar li{
+            background: white;
+            margin: 0.5em 0;
+            padding: 0.3em;
+            border-right: 1em solid black;
+        }
+        ul.navbar a {
+            text-decoration: none;
+        }  
+        a:link {
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        }  */
+    </style>
+
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="indice.html"></a>Página Principal</li>
+        <li><a href="meditaciones.html">Meditaciones</a></li>
+        <li><a href="ciudad.html">Mi ciudad</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+    </ul>
+    <!--Contenido Principal-->
+    <h1>Mi primera página con estilo</h1>
+
+    <p>¡Bienvenido a mi primera página con estilo</p>
+
+    <p>No tiene imágenes, pero tiene estilo.
+        Temabién tiene enlaces, aunque no te lleven a ningún sitio...
+    </p>
+
+    <p>Debería haber más cosas aquí, pero todavía no sé qué poner.</p>
+
+    <!--Firma y fecha de la página. ¡sólo por cortesía -->
+    <address>
+        Creada el 16 de marzo de 2023 
+        <br>
+         por mi misma 
+    </address>
+
+    <footer>
+        <div style="background-color: beige;">
+            <button style="margin-left: 20px;"><a href="HipervinculosEjercicios.html"
+                style="background-image: url(src/images/HTMLlyCSS.jpeg);">Ir a hipervinculos</a></button>
+        </div>
+    </footer>
+</body>
+</html>
