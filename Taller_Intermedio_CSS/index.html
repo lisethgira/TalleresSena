@@ -1,13 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-</head>
-<body>
-    <h1>página principal</h1>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diagramas UML</title>
+        <!--<link rel="stylesheet" href="css/index.css" type="text/css">-->
+        <style>
+           
+            /* Estilo del fondo de página */
+            body {
+              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/3676655073eddeb57f9efafe127f821b.jpeg');
+              background-size: cover;
+              }
+
+             /* Estilo del menú de navegación */
+             ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+      
+            li {
+              float: left;
+            }
+      
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+      
+            li a:hover {
+              background-color: #111;
+            }
+            /* Estilo del logo */
+            .logo {
+              display: block;
+              margin: 0 auto;
+              width: 400px;
+              height: 400px;
+              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+              opacity: 1;
+            }
+      
+            .logo1 {
+              width: 50px;
+              height: 50px;
+              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+        /*estilos del cuerpo*/
+            
+            .principal h1 {
+             color: red;
+             text-align: center;
+             font-size: 50px;
+            }
+
+            .principal p{
+                font-size: 20px;
+                color: white;
+            }
+          </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="logo1"></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+       
+        <div class="container">
+            <div class="logo"></div>
+            <div class="principal">
+                <h1>Diagramas UML</h1>
+                <p>Los diagramas UML son una herramienta de modelado visual que
+                    se
+                    utiliza para representar sistemas de software. Estos
+                    diagramas se
+                    dividen en diferentes tipos, cada uno de los cuales se
+                    utiliza para
+                    modelar diferentes aspectos del sistema. A continuación, se
+                    muestran
+                    algunos de los tipos más comunes:</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2>Diagrama de Clases</h2>
+                <p>El diagrama de clases se utiliza para modelar las clases de
+                    un
+                    sistema y las relaciones entre ellas. Se representa con un
+                    rectángulo que contiene el nombre de la clase y sus
+                    atributos y
+                    métodos, y líneas que conectan las clases para indicar las
+                    relaciones entre ellas. A continuación, se muestra un
+                    ejemplo de un
+                    diagrama de clases:</p>
+                <img src="https://example.com/diagrama_clases.png" alt="Diagrama
+                    de
+                    Clases">
+                </div>
+
+               <div class="column">
+                <h2>Diagrama de Secuencia</h2>
+                <p>El diagrama de secuencia se utiliza para modelar la
+                    interacción entre
+                    objetos en un sistema. Se representa con una línea vertical
+                    que
+                    indica el tiempo y líneas horizontales que indican las
+                    interacciones
+                    entre objetos. A continuación, se muestra un ejemplo de un
+                    diagrama
+                    de secuencia:</p>
+                <img src="https://example.com/diagrama_secuencia.png"
+                    alt="Diagrama de
+                    Secuencia">
+               </div>
+
+                <div class="column">
+                    <h2>Diagrama de Actividad</h2>
+                <p>El diagrama de actividad se utiliza para modelar el flujo de
+                    trabajo
+                    en un proceso de negocio. Se representa con símbolos como
+                    rectángulos, diamantes y círculos para indicar las acciones,
+                    decisiones y puntos de inicio y finalización del proceso. A
+                    continuación, se muestra un ejemplo de un diagrama de
+                    actividad:</p>
+                <img src="https://example.com/diagrama_actividad.png"
+                    alt="Diagrama de
+                    Actividad">
+                </div>
+
+                <h2>Video explicativo</h2>
+                <p>Si quieres saber más sobre los diagramas UML, puedes ver este
+                    video
+                    explicativo:</p>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/8vleX3I2cJo"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h2>Cuadro Comparativo</h2>
+                <table>
+                    <tr>
+                        <th>Diagrama</th>
+                        <th>Propósito</th>
+                        <th>Elementos Principales</th>
+                    </tr>
+                    <tr>
+                        <td>Diagrama de Clases</td>
+                        <td>Modelar las clases y las relaciones entre ellas</td>
+                        <td>Rectángulos, líneas</td>
+                    </tr>
+                    <tr>
+                        <td>Diagrama de Secuencia</td>
+                        <td>Modelar la interacción entre objetos en un sistema</td>
+                        <td>Líneas verticales y horizontales</td>
+                    </tr>
+                    <tr>
+                        <td>Diagrama de Actividad</td>
+                        <td>Modelar el flujo de trabajo en un proceso de negocio</td>
+                        <td>Rectángulos, diamantes, círculos</td>
+                    </tr>
+                </table>
+                <h2>Conclusión</h2>
+                <p>Los diagramas UML son una herramienta útil para modelar
+                    sistemas de
+                    software. Hay varios tipos de diagramas UML, cada uno de los
+                    cuales
+                    se utiliza para modelar diferentes aspectos del sistema.
+                    Esperamos
+                    que esta introducción te haya sido útil para comprender
+                    mejor los
+                    diagramas UML.</p>
+            </div>
+
+        </div>
+    </body>
 </html>
