@@ -1,191 +1,499 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Diagramas UML</title>
-        <!--<link rel="stylesheet" href="css/index.css" type="text/css">-->
-        <style>
-           
-            /* Estilo del fondo de página */
-            body {
-              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/3676655073eddeb57f9efafe127f821b.jpeg');
-              background-size: cover;
-              }
 
-             /* Estilo del menú de navegación */
-             ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-            }
-      
-            li {
-              float: left;
-            }
-      
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
-      
-            li a:hover {
-              background-color: #111;
-            }
-            /* Estilo del logo */
-            .logo {
-              display: block;
-              margin: 0 auto;
-              width: 400px;
-              height: 400px;
-              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              opacity: 1;
-            }
-      
-            .logo1 {
-              width: 50px;
-              height: 50px;
-              background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas UML</title>
+    <!--<link rel="stylesheet" href="css/index.css" type="text/css">-->
+    <style>
+        /* Estilo del fondo de página */
+        body {
+            background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/1600w-kyL4zdu4OLM.webp');
+            background-size: cover;
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        /* Estilo del logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+
+        .logo1 {
+            width: 20px;
+            height: 20px;
+            background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Logo%20Tienda%20Moda%20%20Minimalista%20%20Blanco%20Negro.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
         /*estilos del cuerpo*/
-            
-            .principal h1 {
-             color: red;
-             text-align: center;
-             font-size: 50px;
-            }
 
-            .principal p{
-                font-size: 20px;
-                color: white;
-            }
-          </style>
-    </head>
-    <body>
+        .principal h1 {
+            color: red;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .principal p {
+            font-size: 20px;
+            color: white;
+        }
+
+        /* columana*/
+        .row {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .column {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .column h2 {
+            color: aquamarine;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+        /* estilos de videos */
+
+        .videos h2 {
+            color: aquamarine;
+        }
+
+        .videos p {
+            color: white;
+        }
+
+        .video-container {
+            display: flex;
+
+        }
+
+        iframe {
+            margin-right: 4px;
+
+        }
+
+        /*Estilos de Tablas*/
+        .tablas h2 {
+            color: aquamarine;
+        }
+
+        .tablas p {
+            color: white;
+        }
+
+        .contenedorTablas {
+            display: flex;
+        }
+
+        /*Tabla 1:Tabla Comparativa*/
+
+        .Tabla1 {
+            border-collapse: collapse;
+            font-size: 14px;
+            margin-left: 5px;
+            margin-top: 7px;
+            margin-right: 5px;
+            color: #fff;
+            background-color: #240202;
+        }
+
+        .Tabla1 th,
+        .Tabla1 td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .Tabla1 th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .Tabla1 tbody tr:nth-child(even) {
+            background-color: #b11e67;
+            color: #000;
+        }
+
+        .Tabla1 tbody tr:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        /*Tabla 2: */
+        .Tabla2 {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #fff;
+            background-color: #507eaf;
+        }
+
+        .Tabla2 th,
+        .Tabla2 td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .Tabla2 th:first-child,
+        .Tabla2 td:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .Tabla2 th:last-child,
+        .Tabla2 td:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .Tabla2 th {
+            background-color: #007bff;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .Tabla2 tbody tr:hover {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+
+        /*Tabla 3: */
+        .Tabla3 {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #fff;
+            background-color: #c75ea8;
+        }
+
+        .Tabla3 th,
+        .Tabla3 td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .Tabla3 th {
+            background-color: #f2f2f2;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #007bff;
+        }
+
+        .Tabla3 tbody tr:nth-child(odd) {
+            background-color: #f7f7f7;
+            color: blueviolet;
+        }
+
+        /*footer*/
+        footer {
+			color: #fff;
+			padding: 20px;
+			
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			font-family: Arial, sans-serif;
+		}
+        footer img{
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
         <nav>
             <ul>
-                <li class="logo1"></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a class="logo1" href="./index.html"></a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Pagina2.html">Página 2</a></li>
+                <li><a href="https://diagramasuml.com/">Diagramas UML</a></li>
+                <li><a href="https://www.microsoft.com/es-co/microsoft-365/visio/flowchart-software">Crea tus
+                        diagramas</a></li>
             </ul>
         </nav>
-       
-        <div class="container">
-            <div class="logo"></div>
-            <div class="principal">
-                <h1>Diagramas UML</h1>
-                <p>Los diagramas UML son una herramienta de modelado visual que
-                    se
-                    utiliza para representar sistemas de software. Estos
-                    diagramas se
-                    dividen en diferentes tipos, cada uno de los cuales se
-                    utiliza para
-                    modelar diferentes aspectos del sistema. A continuación, se
-                    muestran
-                    algunos de los tipos más comunes:</p>
-            </div>
-            <div class="row">
+    </header>
+
+    <div class="container" >
+        <div class="logo"></div>
+        <div class="principal">
+            <h1>Diagramas UML</h1>
+            <p>Los diagramas UML son una herramienta de modelado visual que
+                se
+                utiliza para representar sistemas de software. Estos
+                diagramas se
+                dividen en diferentes tipos, cada uno de los cuales se
+                utiliza para
+                modelar diferentes aspectos del sistema. A continuación, se
+                muestran
+                algunos de los tipos más comunes:</p>
+        </div>
+        <div class="row">
+            <div>
                 <div class="column">
                     <h2>Diagrama de Clases</h2>
-                <p>El diagrama de clases se utiliza para modelar las clases de
-                    un
-                    sistema y las relaciones entre ellas. Se representa con un
-                    rectángulo que contiene el nombre de la clase y sus
-                    atributos y
-                    métodos, y líneas que conectan las clases para indicar las
-                    relaciones entre ellas. A continuación, se muestra un
-                    ejemplo de un
-                    diagrama de clases:</p>
-                <img src="https://example.com/diagrama_clases.png" alt="Diagrama
-                    de
-                    Clases">
+                    <p>El diagrama de clases se utiliza para modelar las clases de
+                        un
+                        sistema y las relaciones entre ellas. Se representa con un
+                        rectángulo que contiene el nombre de la clase y sus
+                        atributos y
+                        métodos, y líneas que conectan las clases para indicar las
+                        relaciones entre ellas. A continuación, se muestra un
+                        ejemplo de un
+                        diagrama de clases:</p>
+                    <img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/diagrama_clases_vaquero1.png"
+                        alt="Diagrama
+                        de
+                        Clases">
                 </div>
-
-               <div class="column">
-                <h2>Diagrama de Secuencia</h2>
-                <p>El diagrama de secuencia se utiliza para modelar la
-                    interacción entre
-                    objetos en un sistema. Se representa con una línea vertical
-                    que
-                    indica el tiempo y líneas horizontales que indican las
-                    interacciones
-                    entre objetos. A continuación, se muestra un ejemplo de un
-                    diagrama
-                    de secuencia:</p>
-                <img src="https://example.com/diagrama_secuencia.png"
-                    alt="Diagrama de
-                    Secuencia">
-               </div>
 
                 <div class="column">
-                    <h2>Diagrama de Actividad</h2>
-                <p>El diagrama de actividad se utiliza para modelar el flujo de
-                    trabajo
-                    en un proceso de negocio. Se representa con símbolos como
-                    rectángulos, diamantes y círculos para indicar las acciones,
-                    decisiones y puntos de inicio y finalización del proceso. A
-                    continuación, se muestra un ejemplo de un diagrama de
-                    actividad:</p>
-                <img src="https://example.com/diagrama_actividad.png"
-                    alt="Diagrama de
-                    Actividad">
+                    <h2>Diagrama de Secuencia</h2>
+                    <p>El diagrama de secuencia se utiliza para modelar la
+                        interacción entre
+                        objetos en un sistema. Se representa con una línea vertical
+                        que
+                        indica el tiempo y líneas horizontales que indican las
+                        interacciones
+                        entre objetos. A continuación, se muestra un ejemplo de un
+                        diagrama de secuencia:</p>
+                    <img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/gitmind-uml.jpg"
+                        alt="Diagrama de
+                        Secuencia">
                 </div>
-
-                <h2>Video explicativo</h2>
-                <p>Si quieres saber más sobre los diagramas UML, puedes ver este
-                    video
-                    explicativo:</p>
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/8vleX3I2cJo"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <h2>Cuadro Comparativo</h2>
-                <table>
-                    <tr>
-                        <th>Diagrama</th>
-                        <th>Propósito</th>
-                        <th>Elementos Principales</th>
-                    </tr>
-                    <tr>
-                        <td>Diagrama de Clases</td>
-                        <td>Modelar las clases y las relaciones entre ellas</td>
-                        <td>Rectángulos, líneas</td>
-                    </tr>
-                    <tr>
-                        <td>Diagrama de Secuencia</td>
-                        <td>Modelar la interacción entre objetos en un sistema</td>
-                        <td>Líneas verticales y horizontales</td>
-                    </tr>
-                    <tr>
-                        <td>Diagrama de Actividad</td>
-                        <td>Modelar el flujo de trabajo en un proceso de negocio</td>
-                        <td>Rectángulos, diamantes, círculos</td>
-                    </tr>
-                </table>
-                <h2>Conclusión</h2>
-                <p>Los diagramas UML son una herramienta útil para modelar
-                    sistemas de
-                    software. Hay varios tipos de diagramas UML, cada uno de los
-                    cuales
-                    se utiliza para modelar diferentes aspectos del sistema.
-                    Esperamos
-                    que esta introducción te haya sido útil para comprender
-                    mejor los
-                    diagramas UML.</p>
             </div>
 
+            <div>
+                <div class="column">
+                    <h2>Diagrama de Actividad</h2>
+                    <p>El diagrama de actividad se utiliza para modelar el flujo de
+                        trabajo
+                        en un proceso de negocio. Se representa con símbolos como
+                        rectángulos, diamantes y círculos para indicar las acciones,
+                        decisiones y puntos de inicio y finalización del proceso. A
+                        continuación, se muestra un ejemplo de un diagrama de
+                        actividad:</p>
+                    <img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Figura-6-Ejemplo-de-Diagrama-de-Actividad.png"
+                        alt="Diagrama de
+                        Actividad">
+                </div>
+
+                <div class="column">
+                    <h2>Diagrama de Casos de uso</h2>
+                    <p>Un diagrama de caso de uso puede incluir varios casos de uso y las relaciones entre casos de uso
+                        y
+                        las personas, los grupos o los sistemas que interactúan para llevar a cabo el caso de uso. Puede
+                        crear un artefacto de actor que proporcione detalles textuales de un actor en un diagrama de
+                        caso de
+                        uso. Acontinuación, se muestra un ejemplo de un diagrama de casos de uso:</p>
+                    <img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Figura-31-Diagrama-de-casos-de-uso-de-la-Web-colaborativa.png"
+                        alt="Diagrama de
+                        Casos de uso">
+                </div>
+            </div>
         </div>
-    </body>
+        <!-- videos-->
+        <div class="videos">
+            <h2>Videos Explicativos</h2>
+            <p>Si quieres saber más sobre los diagramas UML, puedes ver los siguientes videos explicativos:</p>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0yLerU0g-Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xiQfSFxuuBw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/C2MizD1yztk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fFVNxiWOkEo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- tablas -->
+        <div class="tablas">
+            <h2> Tablas sobre UML</h2>
+            <p>Si quieres ver más información, observa la siguiente tabla  con 3 diferentes estilos:</p>
+            <h2>Cuadro Comparativo</h2>
+            <div class="contenedorTablas">
+                    <div >
+                        <table class="Tabla1" >
+                            <thead>
+                                <tr>
+                                    <th>Diagrama</th>
+                                    <th>Propósito</th>
+                                    <th>Elementos Principales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Diagrama de Clases</td>
+                                    <td>Modelar las clases y las relaciones entre ellas</td>
+                                    <td>Rectángulos, líneas</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Secuencia</td>
+                                    <td>Modelar la interacción entre objetos en un sistema</td>
+                                    <td>Líneas verticales y horizontales</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Actividad</td>
+                                    <td>Modelar el flujo de trabajo en un proceso de negocio</td>
+                                    <td>Rectángulos, diamantes, círculos</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Casos de Uso</td>
+                                    <td>Modelar los usuarios y su interacción con el sistema</td>
+                                    <td>lineas, ovalos, verbos acción, flechas, dibujo usuario</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div >
+                        <table class="Tabla2" >
+                            <thead>
+                                <tr>
+                                    <th>Diagrama</th>
+                                    <th>Propósito</th>
+                                    <th>Elementos Principales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Diagrama de Clases</td>
+                                    <td>Modelar las clases y las relaciones entre ellas</td>
+                                    <td>Rectángulos, líneas</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Secuencia</td>
+                                    <td>Modelar la interacción entre objetos en un sistema</td>
+                                    <td>Líneas verticales y horizontales</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Actividad</td>
+                                    <td>Modelar el flujo de trabajo en un proceso de negocio</td>
+                                    <td>Rectángulos, diamantes, círculos</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Casos de Uso</td>
+                                    <td>Modelar los usuarios y su interacción con el sistema</td>
+                                    <td>lineas, ovalos, verbos acción, flechas, dibujo usuario</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div >
+                        <table class="Tabla3" >
+                            <thead>
+                                <tr>
+                                    <th>Diagrama</th>
+                                    <th>Propósito</th>
+                                    <th>Elementos Principales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Diagrama de Clases</td>
+                                    <td>Modelar las clases y las relaciones entre ellas</td>
+                                    <td>Rectángulos, líneas</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Secuencia</td>
+                                    <td>Modelar la interacción entre objetos en un sistema</td>
+                                    <td>Líneas verticales y horizontales</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Actividad</td>
+                                    <td>Modelar el flujo de trabajo en un proceso de negocio</td>
+                                    <td>Rectángulos, diamantes, círculos</td>
+                                </tr>
+                                <tr>
+                                    <td>Diagrama de Casos de Uso</td>
+                                    <td>Modelar los usuarios y su interacción con el sistema</td>
+                                    <td>lineas, ovalos, verbos acción, flechas, dibujo usuario</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>    
+        <a href="https://es-la.facebook.com/"><img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Facebook.png"
+            alt="facebook"></a>
+    <a href="https://twitter.com/"><img width="40px" src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Twitter.png" alt="twitter"></a>
+    <a href="https://www.instagram.com/"><img src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/Instagram.png" alt="instagram"></a>
+    <a href="https://www.youtube.com/"><img width="40px" src="https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/YouTube.png" alt="youtube"></a>     
+            <p> 
+                &copy; 2023 -Liseth Arelis Giraldo Morales - ADSO - CTGI - SENA. Todos los derechos reservados.
+            </p>
+       
+    </footer>
+</body>
+
 </html>
