@@ -11,72 +11,154 @@
 
 <body>
 
+    <main>
+        <center>
+            <h1 style="color: red;">Grid</h1>
+        </center>
+        <p style="font-size: 20px;"><b>CSS grid</b> es un sistema de maquetación basado en grillas y se caracteriza por
+            ser bidimensional, independiente
+            del orden del markup y flexible. Extremadamente flexible.</p>
 
-    <div class="container1">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-    </div>
-    <div class="container2">
-        <div class="item-a">
-            <img src="https://picsum.photos/300/600/?random">
-        </div>
         <div>
-            <img src="https://picsum.photos/600/300/?random">
+            <h1>Ejercicio 1: </h1>
+            <p>En el CSS de la clase container decimos a este elemento que su modo display es grid. Lo que quiere decir
+                que
+                los hijos inmediatamente descendientes serán parte de la grilla.</p>
+
+            <p>El siguiente punto importante es grid-gap: 1rem. Esta línea lo que hace es incluir un "gutter" o canal
+                de rejilla de 1rem para separar los elementos de la grilla. La unidad rem es un tamaño que se basa en el
+                tamaño base de la letra m. Se usa comunmente para maquetar de una forma más flexible, dado que con
+                modificar el tamaño de la fuente base todo el contenido se adaptaría en concordancia con en el tamaño
+                base.</p>
+
+            <p>Con grid-template-columns lo que hacemos es definir el número de columnas y el ancho de las mismas. En
+                este caso se han definido 3 columnas de 200px cada una.</p>
+
+            <p>Con grid-template-rows más de lo mismo, solo que esta vez estamos definiendo el número de filas. En
+                nuestro ejemplo hemos definido 2 filas de 150px cada una. Además, el algoritmo que usa grid es lo
+                suficiente inteligente como para colocar de forma esperada elementos extra, como es nuestro caso, ya que
+                hemos definido 2 filas pero hemos incluido un séptimo elemento que se coloca en una tercera fila no
+                definida. Y su altura (al no estar especificada) sería la que ocupase el contenido de la celda. </p>
         </div>
-        <div class="item-b">
-            <img src="https://picsum.photos/200/200/?random">
-        </div>
+        <center>
+            <div class="container1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+            </div>
+        </center>
+
         <div>
-            <img src="https://picsum.photos/200/500/?random">
+            <h1>Ejercicio 2: Colocar elementos en la grilla </h1>
+
+            <p>podemos hacer uso de grid-column-start y grid-column-end para colocar elementos en un línea de columna o
+                grid-row-start y grid-row-end para las filas. O también podemos hacer uso del método acortado
+                grid-column: X / Y; y grid-row: X / Y; siendo X e Y el número de columna o fila inicial y el final.</p>
         </div>
-        <div class="item-c">
-            <img src="https://picsum.photos/200/400/?random">
-        </div>
+
+        <center>
+            <div class="container2" >
+                <div class="item-a">
+                    <img src="https://picsum.photos/300/600/?random">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/300/?random">
+                </div>
+                <div class="item-b">
+                    <img src="https://picsum.photos/200/200/?random">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200/500/?random">
+                </div>
+                <div class="item-c">
+                    <img src="https://picsum.photos/200/400/?random">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200/250/?random">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200/100/?random">
+                </div>
+                <div class="item-d">
+                    <img src="https://picsum.photos/200/600/?random">
+                </div>
+            </div>
+        </center>
+
         <div>
-            <img src="https://picsum.photos/200/250/?random">
+            <h1>Ejercicio 3: Layouts con grid-template-areas </h1>
+
+            <p>CSS Grid no solamente permite hacer de nuestra maquetación más flexible, sino que además es un motor muy
+                potente para diseñar layouts en dos dimensiones. Por ejemplo veamos uno de los layouts más usados a lo
+                largo de la web. El denominado holy grail:</p>
+
+            <p>Con los estilos que acabamos de aplicar especificamos un máximo de ancho de 1000px. Es recomendable hacer
+                uso del max-width dado que en monitores especialmente grandes no queremos que el ancho de la web sea el
+                total del mismo.</p>
+
+            <p>También especificamos un mínimo de altura con vh (Viewport Height). Esto hará que aunque no tengamos
+                mucho contenido en nuestra sección de contenido nos aseguramos que el footer queda abajo del todo. Si lo
+                quitásemos quedaría tal que así:
+            </p>
         </div>
+
+        <center>
+            <div class="container3">
+                <header>Header</header>
+                <nav>Nav</nav>
+                <section>Section</section>
+                <aside>Aside</aside>
+                <footer>Footer</footer>
+            </div>
+        </center>
+
         <div>
-            <img src="https://picsum.photos/200/100/?random">
+            <h1>Ejercicio 4: </h1>
         </div>
-        <div class="item-d">
-            <img src="https://picsum.photos/200/600/?random">
+
+        <center>
+            <div class="container4">
+                <header>Header</header>
+                <nav>Nav</nav>
+                <section>Section</section>
+                <aside>Aside</aside>
+                <footer>Footer</footer>
+            </div>
+        </center>
+
+        <div>
+            <h1>Ejercicio 5: </h1>
         </div>
-    </div>
-    <div class="container3">
-        <header>Header</header>
-        <nav>Nav</nav>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <footer>Footer</footer>
-    </div>
-    <div class="container4">
-        <header>Header</header>
-        <nav>Nav</nav>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <footer>Footer</footer>
-    </div>
-    <div class="container5">
-        <header>Header</header>
-        <nav>Nav</nav>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <footer>Footer</footer>
-    </div>
-    <div class="container6">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-    </div>
+
+        <center>
+            <div class="container5">
+                <header>Header</header>
+                <nav>Nav</nav>
+                <section>Section</section>
+                <aside>Aside</aside>
+                <footer>Footer</footer>
+            </div>
+        </center>
+
+        <div>
+            <h1>Ejercicio 6: </h1>
+        </div>
+
+        <center>
+            <div class="container6">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+            </div>
+        </center>
     </main>
 </body>
 
