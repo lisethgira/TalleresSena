@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://raw.githubusercontent.com/lisethgira/Banco-de-Imagenes-sena/master/taller_intermedio_css/1600w-kyL4zdu4OLM.webp');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
+    color: blueviolet;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+  }
+  
+  label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.result {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container > div {
+        flex-basis: 100%;
+    }
+}
+
+  /*footer*/
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 600px) {
+    main {
+      margin: 10px auto;
+      padding: 10px;
+    }
+    
+    form {
+      display: block;
+    }
+    
+    form input[type="number"] {
+      width: 100%;
+    }
+    
+    form button {
+      width: auto;
+      margin-top: 10px;
+    }
+
+  }
