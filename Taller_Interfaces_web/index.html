@@ -61,7 +61,7 @@
         </div>
 
         <center>
-            <div class="container2" >
+            <div class="container2">
                 <div class="item-a">
                     <img src="https://picsum.photos/300/600/?random">
                 </div>
@@ -104,6 +104,24 @@
                 mucho contenido en nuestra sección de contenido nos aseguramos que el footer queda abajo del todo. Si lo
                 quitásemos quedaría tal que así:
             </p>
+
+            <p>
+                si nos fijamos atentamente veremos un nueva unidad: fr. Esta unidad de medida es propia de CSS Grid e
+                indica que un elemento debería ocupar una fracción determinada del espacio restante.
+            </p>
+
+            <p>
+                Lo bueno de fr es que tiene en cuenta el tamaño de los elementos de la grilla por lo que si tenemos dos
+                columnas y la primera hemos dicho que ocupe 100px y la segunda 1fr la segunda columna ocupará 100% -
+                100px.
+            </p>
+
+            <p>
+                La pregunta ahora es la siguiente: ¿Cómo reordenamos los elementos? Es aquí donde entran en juego
+                grid-template-areas y grid-area.
+                A cada sección de nuestra web le asignamos un grid-area. El nombre del grid-area puede ser el que
+                queramos. Y la magia la veremos en el contenedor (main) con grid-template-areas.
+            </p>
         </div>
 
         <center>
@@ -118,6 +136,14 @@
 
         <div>
             <h1>Ejercicio 4: </h1>
+            <p>
+                Dentro del media query hemos redefinido el número de columnas y filas. Por último reordenamos los
+                elementos especificando una nueva distribución con grid-template-areas.
+            </p>
+
+            <p>
+                por último nos queda el media query para desktop
+            </p>
         </div>
 
         <center>
@@ -131,7 +157,27 @@
         </center>
 
         <div>
-            <h1>Ejercicio 5: </h1>
+            <h1>Ejercicio 5: Repeat </h1>
+            <p>
+                con grid-template-columns si quiero crear una grilla de 12 columnas tendría que hacerlo tal que así:
+
+                <b>grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;</b>
+            </p>
+            <p>
+                Pues no, dado que tenemos la función repeat(), cuyo primer argumento es el número de repeticiones y el
+                segundo argumento es la unidad a repetirse: 1
+                <b>grid-template-columns: repeat(12, 1fr);</b>
+            </p>
+            <p>
+                la belleza de CSS Grid es que podremos crear las columnas y filas a nuestro antojo y bajo demanda.
+            </p>
+
+            <p>
+                No tendría absolutamente ninguna diferencia visual. Esto no quiere decir que ya no sea necesario un
+                sistema de grillas de un número determinado de
+                columnas, lo que quiere decir es que tenemos la libertad de elegir el número de columnas y filas
+                dependiendo del diseño.
+            </p>
         </div>
 
         <center>
@@ -145,7 +191,21 @@
         </center>
 
         <div>
-            <h1>Ejercicio 6: </h1>
+            <h1>Ejercicio 6: Responsividad avanzada</h1>
+
+            <p>
+                Esto lo podremos hacer con auto-fit. Queremos que las celdas ocupen 200px y que se coloquen en una fila
+                siempre y cuando haya espacio.
+            </p>
+            <p>
+                De esta forma el número de elementos será dinámico, contando que haya 200px libres. Pero el problema
+                ahora es que van a quedar espacios en blanco en ciertos puntos:
+            </p>
+            <p>
+                Por esta razón tenemos minmax(); una función que especifica un mínimo y un máximo. Nuestro mínimo en
+                este caso serían 200px y el máximo sería 1fr, de esta forma si hay menos de 200px libres los elementos
+                abarcarían todo el espacio disponible y en el momento en el que hay 200px libres se añade un elemento
+            </p>
         </div>
 
         <center>
@@ -159,6 +219,16 @@
                 <div>7</div>
             </div>
         </center>
+
+        <div>
+            <h1>Conclusión</h1>
+            <p>Como hemos visto con grid-template-areas, grid-template-rows y grid-template-columns podemos lograr
+                maquetación en CSS de manera fácil y efectiva. Pero solamente hemos visto la punta del iceberg, puesto
+                que CSS Grid trae consigo un montón más de funcionalidades y mejoras.</p>
+            <p>Por ejemplo podemos tener control absoluto del alineamiento que toman todos los elementos dentro de la
+                grilla tanto horizontalmente con justify-items como verticalmente con align-items. También disponemos
+                con justify-content o align-content formas de alinear la grilla como tal en el eje X o el Y.</p>
+        </div>
     </main>
 </body>
 

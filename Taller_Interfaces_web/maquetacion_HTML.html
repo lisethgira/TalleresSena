@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <article>
+            <hgroup>
+                <h1>Bienvenidos a mi web</h1>
+                <h2>La web de HTML5</h2>
+            </hgroup>
+            <progress>
+                <span id="objprogress">25</span>%
+            </progress>
+        </article>
+        <article>
+            <audio controls="controls">
+                <source src="cancion.ogg" type="audio/ogg" />
+                <source src="cancion.mp3" type="audio/mpeg" />
+            </audio>
+            <details>
+                <summary>Copyright por mi persona.</summary>
+                <p>Lorem ipsum dolor sit amet....</p>
+            </details>
+        </article>
+        <div>
+            <input id="i" autofocus>
+            <script>
+                function auto() {
+                    if (!("autofocus" in document.createElement("input"))) {
+                        document.getElementById("i").focus();
+                    }
+                } window.onload = auto; 
+            </script>
+        </div>
+
+        <div><input type="email">
+            <input type="url">
+            <input type="tel">
+            <input name="xx" type="range" min="0" max="10" step="6" value="4">
+        </div>
+
+        <div>
+            <canvas id="micanvas" width="200" height="100"> Este texto se muestra para los navegadores no compatibles
+                con
+                canvas. <br> Por favor, utiliza Firefox, Chrome, Safari u Opera.
+            </canvas>
+        </div>
+
+        <div>
+            <script>
+                var canvas = document.getElementById('entorno_canvas');
+                var context = canvas.getContext('2d');
+                var canvas = document.getElementById('micanvas');
+                //Accedo al contexto de '2d' de este canvas, necesario para dibujar var contexto = canvas.getContext('2d'); 
+                //Dibujo en el contexto del canvas
+                contexto.fillRect(50, 0, 10, 150);
+            </script>
+        </div>
+
+        <div>
+            <script>
+                var canvas = document.getElementById("e");
+                var context = canvas.getContext("2d");
+                var img = new Image();
+                img.src = "https://picsum.photos/200/600/?random";
+                //Necesita especificarse donde está la imagen context.drawImage(img, 0, 0);
+            </script>
+        </div>
+
+        <div>
+            <img id="imagen" src="https://picsum.photos/200/600/?random" alt="" width="177" height="113">
+            <script>
+                window.onload = function () {
+                    var canvas = document.getElementById("canvas");
+                    var context = canvas.getContext("2d");
+                    var img = document.getElementById("imagen");
+                    context.drawImage(img, 0, 0);
+                }; 
+            </script>
+        </div>
+
+        <div>
+            <audio id="buttonactive">
+                <source src="media/button_active.mp3" />
+                <source src="media/button_active.ogg" />
+            </audio>
+            <script> document.getElementById("buttonactive").play(); </script> The play function plays the audio from
+            the elapsed time, which is stored in the currentTimeproperty. The default value of currentTime is zero. The
+            following code plays the audio from 3.5 seconds:
+            <script> document.getElementById("buttonactive").currentTime = 3.5; document.getElementById("buttonactive").play(); </script>
+            <script> document.getElementById("buttonactive").pause(); </script>
+            <script> document.getElementById("buttonactive").volume = 0.3; </script>Tecnólogo Informático TDIVJ2D
+        </div>
+    </main>
+    <aside>
+
+    </aside>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
