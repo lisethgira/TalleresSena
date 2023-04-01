@@ -1,0 +1,20 @@
+
+main {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 5px;
+    border: 1px solid #c54545;
+}
+th {
+    background-color: #f2f2f2;
+}

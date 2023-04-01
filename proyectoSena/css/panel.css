@@ -1,0 +1,47 @@
+/* Estilos para el encabezado */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+	background-color: #444;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #555;
+}
+
+/* Estilos para el contenedor principal */
+main {
+	padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
