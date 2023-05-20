@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../src/images/javascript.png" alt="javascript"
                     style="width: 35px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="dropdown-responsive" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
@@ -28,73 +30,80 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a id="dropdown-link" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="true" aria-expanded="false">Ejercicios del 1 al 20</a>
+                            role="button" aria-haspopup="true" aria-expanded="false">Sesión 1</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="./ejercicio1.html">Ejercicio 1</a>
                             <a class="dropdown-item" href="./ejercicio2.html">Ejercicio 2</a>
-                            <a class="dropdown-item" href="#">Ejercicio 3</a>
-                            <a class="dropdown-item" href="#">Ejercicio 4</a>
-                            <a class="dropdown-item" href="#">Ejercicio 5</a>
-                            <a class="dropdown-item" href="#">Ejercicio 6</a>
-                            <a class="dropdown-item" href="#">Ejercicio 7</a>
-                            <a class="dropdown-item" href="#">Ejercicio 8</a>
-                            <a class="dropdown-item" href="#">Ejercicio 9</a>
-                            <a class="dropdown-item" href="#">Ejercicio 10</a>
-                            <a class="dropdown-item" href="#">Ejercicio 11</a>
-                            <a class="dropdown-item" href="#">Ejercicio 12</a>
-                            <a class="dropdown-item" href="#">Ejercicio 13</a>
-                            <a class="dropdown-item" href="#">Ejercicio 14</a>
-                            <a class="dropdown-item" href="#">Ejercicio 15</a>
-                            <a class="dropdown-item" href="#">Ejercicio 16</a>
-                            <a class="dropdown-item" href="#">Ejercicio 17</a>
-                            <a class="dropdown-item" href="#">Ejercicio 18</a>
-                            <a class="dropdown-item" href="#">Ejercicio 19</a>
-                            <a class="dropdown-item" href="#">Ejercicio 20</a>
+                            <a class="dropdown-item" href="./ejercicio3.html">Ejercicio 3</a>
+                            <a class="dropdown-item" href="./ejercicio4.html">Ejercicio 4</a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a id="dropdown-link2" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="true" aria-expanded="false">Ejercicios del 21 al 40</a>
+                            role="button" aria-haspopup="true" aria-expanded="false">Sesión 2</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ejercicio 21</a>
-                            <a class="dropdown-item" href="#">Ejercicio 22</a>
-                            <a class="dropdown-item" href="#">Ejercicio 23</a>
-                            <a class="dropdown-item" href="#">Ejercicio 24</a>
-                            <a class="dropdown-item" href="#">Ejercicio 25</a>
-                            <a class="dropdown-item" href="#">Ejercicio 26</a>
-                            <a class="dropdown-item" href="#">Ejercicio 27</a>
-                            <a class="dropdown-item" href="#">Ejercicio 28</a>
-                            <a class="dropdown-item" href="#">Ejercicio 29</a>
-                            <a class="dropdown-item" href="#">Ejercicio 30</a>
-                            <a class="dropdown-item" href="#">Ejercicio 31</a>
-                            <a class="dropdown-item" href="#">Ejercicio 32</a>
-                            <a class="dropdown-item" href="#">Ejercicio 33</a>
-                            <a class="dropdown-item" href="#">Ejercicio 34</a>
-                            <a class="dropdown-item" href="#">Ejercicio 35</a>
-                            <a class="dropdown-item" href="#">Ejercicio 36</a>
-                            <a class="dropdown-item" href="#">Ejercicio 37</a>
-                            <a class="dropdown-item" href="#">Ejercicio 38</a>
-                            <a class="dropdown-item" href="#">Ejercicio 39</a>
-                            <a class="dropdown-item" href="#">Ejercicio 40</a>
+                            <a class="dropdown-item" href="./ejercicio5.html">Ejercicio 5</a>
+                            <a class="dropdown-item" href="./ejercicio6.html">Ejercicio 6</a>
+                            <a class="dropdown-item" href="./ejercicio7.html">Ejercicio 7</a>
+                            <a class="dropdown-item" href="./ejercicio8.html">Ejercicio 8</a>
+                            <a class="dropdown-item" href="./ejercicio9.html">Ejercicio 9</a>
+                            <a class="dropdown-item" href="./ejercicio10.html">Ejercicio 10</a>
+                            <a class="dropdown-item" href="./ejercicio11.html">Ejercicio 11</a>
+                            <a class="dropdown-item" href="./ejercicio12.html">Ejercicio 12</a>
+                            <a class="dropdown-item" href="./ejercicio13.html">Ejercicio 13</a>
+                            <a class="dropdown-item" href="./ejercicio14.html">Ejercicio 14</a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a id="dropdown-link3" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-haspopup="true" aria-expanded="false">Ejercicios del 41 al 51</a>
+                            role="button" aria-haspopup="true" aria-expanded="false">Sesión 3</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Ejercicio 41</a>
-                            <a class="dropdown-item" href="#">Ejercicio 42</a>
-                            <a class="dropdown-item" href="#">Ejercicio 43</a>
-                            <a class="dropdown-item" href="#">Ejercicio 44</a>
-                            <a class="dropdown-item" href="#">Ejercicio 45</a>
-                            <a class="dropdown-item" href="#">Ejercicio 46</a>
-                            <a class="dropdown-item" href="#">Ejercicio 47</a>
-                            <a class="dropdown-item" href="#">Ejercicio 48</a>
-                            <a class="dropdown-item" href="#">Ejercicio 49</a>
-                            <a class="dropdown-item" href="#">Ejercicio 50</a>
-                            <a class="dropdown-item" href="#">Ejercicio 51</a>
+                            <a class="dropdown-item" href="./ejercicio15.html">Ejercicio 15</a>
+                            <a class="dropdown-item" href="./ejercicio16.html">Ejercicio 16</a>
+                            <a class="dropdown-item" href="./ejercicio17.html">Ejercicio 17</a>
+                            <a class="dropdown-item" href="./ejercicio18.html">Ejercicio 18</a>
+                            <a class="dropdown-item" href="./ejercicio19.html">Ejercicio 19</a>
+                            <a class="dropdown-item" href="./ejercicio20.html">Ejercicio 20</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="dropdown-link4" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Sesión 4</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./ejercicio21.html">Ejercicio 21</a>
+                            <a class="dropdown-item" href="./ejercicio22.html">Ejercicio 22</a>
+                            <a class="dropdown-item" href="./ejercicio23.html">Ejercicio 23</a>
+                            <a class="dropdown-item" href="./ejercicio24.html">Ejercicio 24</a>
+                            <a class="dropdown-item" href="./ejercicio25.html">Ejercicio 25</a>
+                            <a class="dropdown-item" href="./ejercicio26.html">Ejercicio 26</a>
+                            <a class="dropdown-item" href="./ejercicio27.html">Ejercicio 27</a>
+                            <a class="dropdown-item" href="./ejercicio28.html">Ejercicio 28</a>
+                            <a class="dropdown-item" href="./ejercicio29.html">Ejercicio 29</a>
+                            <a class="dropdown-item" href="./ejercicio30.html">Ejercicio 30</a>
+                            <a class="dropdown-item" href="./ejercicio31.html">Ejercicio 31</a>
+                            <a class="dropdown-item" href="./ejercicio32.html">Ejercicio 32</a>
+                            <a class="dropdown-item" href="./ejercicio33.html">Ejercicio 33</a>
+                            <a class="dropdown-item" href="./ejercicio34.html">Ejercicio 34</a>
+                            <a class="dropdown-item" href="./ejercicio35.html">Ejercicio 35</a>
+                            <a class="dropdown-item" href="./ejercicio36.html">Ejercicio 36</a>
+                            <a class="dropdown-item" href="./ejercicio37.html">Ejercicio 37</a>
+                            <a class="dropdown-item" href="./ejercicio38.html">Ejercicio 38</a>
+                            <a class="dropdown-item" href="./ejercicio39.html">Ejercicio 39</a>
+                            <a class="dropdown-item" href="./ejercicio40.html">Ejercicio 40</a>
+                            <a class="dropdown-item" href="./ejercicio41.html">Ejercicio 41</a>
+                            <a class="dropdown-item" href="./ejercicio42.html">Ejercicio 42</a>
+                            <a class="dropdown-item" href="./ejercicio43.html">Ejercicio 43</a>
+                            <a class="dropdown-item" href="./ejercicio44.html">Ejercicio 44</a>
+                            <a class="dropdown-item" href="./ejercicio45.html">Ejercicio 45</a>
+                            <a class="dropdown-item" href="./ejercicio46.html">Ejercicio 46</a>
+                            <a class="dropdown-item" href="./ejercicio47.html">Ejercicio 47</a>
+                            <a class="dropdown-item" href="./ejercicio48.html">Ejercicio 48</a>
+                            <a class="dropdown-item" href="./ejercicio49.html">Ejercicio 49</a>
+                            <a class="dropdown-item" href="./ejercicio50.html">Ejercicio 50</a>
+                            <a class="dropdown-item" href="./ejercicio51.html">Ejercicio 51</a>
                         </div>
                     </li>
                 </ul>
@@ -109,15 +118,15 @@
         </header>
 
         <div class="card">
-            <p>Aquí va la solución del ejercicio 2</p>
+            <div class="m-4">
+                <p>Aquí va la solución del ejercicio 2</p>
+            </div>
         </div>
     </div>
 
     <script src="../main.js"></script>
+    <script src="ejercicio2.js"></script>
 
-<footer>
-    
-</footer>
 </body>
 
 </html>
