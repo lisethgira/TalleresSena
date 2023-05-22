@@ -129,7 +129,7 @@
                 <div class="card border-light mx-4" style="max-width: 40rem;">
                     <img class="" src="../src/images/ejercicios/ejercicio1.png" alt="ejercicio 1">
                 </div>
-            </center> 
+            </center>
 
             <div class="m-4">
                 <h3>Calculadora de área y volumen de un cilindro</h3>
@@ -165,46 +165,47 @@
                     </div>
                 </div>
             </div>
-
             <div class="mx-4">
                 <h4 class="my-2">Algoritmo</h4>
-                <p class="my-2">si deseas ver en consola la solución del algoritmo en un archivo javascript llamado <b>ejercicio1.js</b> ingresa el siguiente código y ejecuta el comando <b> node ejercicio1.js.</b></p>
+                <p class="my-2">si deseas ver en consola la solución del algoritmo en un archivo javascript llamado
+                    <b>ejercicio1.js</b> ingresa el siguiente código y ejecuta el comando <b> node ejercicio1.js.</b>
+                </p>
                 <p>
-                   const readline = require('readline');
+                    const readline = require('readline');
                 </p>
                 <p>
                     const rl = readline.createInterface({
-                        <br>
-                        input: process.stdin,
-                        <br>
-                        output: process.stdout
-                        <br>
-                      });
+                    <br>
+                    input: process.stdin,
+                    <br>
+                    output: process.stdout
+                    <br>
+                    });
                 </p>
                 <p>
                     function calcularAreaVolumen() {
-                        <br>
-                        <b>//Obtener los valores del radio y la altura del formulario</b>
-                        <br>
-                        let radio = parseFloat(document.getElementById("radio").value);
-                        <br>
-                        let altura = parseFloat(document.getElementById("altura").value);
-                        <br>
-                        <br>
-                        <b>// Calcular el volumen y el área</b>
-                        <br>
-                        let volumen = Math.PI * Math.pow(radio, 2) * altura;
-                        <br>
-                        let area = 2 * Math.PI * radio * (radio + altura);
-                        <br>
-                        <br>
-                        <b>// Mostrar los resultados en los elementos de salida</b>
-                        <br>
-                        document.getElementById("resultadoArea").textContent = area.toFixed(2);
-                        <br>
-                        document.getElementById("resultadoVolumen").textContent = volumen.toFixed(2);
-                        <br>
-                      }
+                    <br>
+                    <b>//Obtener los valores del radio y la altura del formulario</b>
+                    <br>
+                    let radio = parseFloat(document.getElementById("radio").value);
+                    <br>
+                    let altura = parseFloat(document.getElementById("altura").value);
+                    <br>
+                    <br>
+                    <b>// Calcular el volumen y el área</b>
+                    <br>
+                    let volumen = Math.PI * Math.pow(radio, 2) * altura;
+                    <br>
+                    let area = 2 * Math.PI * radio * (radio + altura);
+                    <br>
+                    <br>
+                    <b>// Mostrar los resultados en los elementos de salida</b>
+                    <br>
+                    document.getElementById("resultadoArea").textContent = area.toFixed(2);
+                    <br>
+                    document.getElementById("resultadoVolumen").textContent = volumen.toFixed(2);
+                    <br>
+                    }
                 </p>
                 <p>
                     // 1. Inicio
@@ -219,40 +220,40 @@
                     // 3. Leer el valor de Radio (R) y Altura (H)
                     <br>
                     rl.question("Ingrese el valor del radio (R): ", (answerR) => {
-                      <br>
-                      R = parseFloat(answerR);
-                      <br>
-                      rl.question("Ingrese el valor de la altura (H): ", (answerH) => {
-                        <br>
-                        H = parseFloat(answerH);
-                        <br>
-                        <br>
-                        // 4. Calcular el Volumen aplicando la fórmula
-                        <br>
-                        const volumen = Math.PI * Math.pow(R, 2) * H;
-                        <br>
-                        <br>
-                    
-                        // 5. Calcular el valor del área aplicando la fórmula respectiva
-                        <br>
-                        const area = 2 * Math.PI * R * (R + H);
-                        <br>
-                        <br>
-                    
-                        // 6. Escribir el valor del área y del volumen en la consola
-                        <br>
-                        console.log("El área del cilindro es: " + area.toFixed(2));
-                        <br>
-                        console.log("El volumen del cilindro es: " + volumen.toFixed(2));
-                        <br>
-                        <br>
-                    
-                        // 7. Fin
-                        <br>
-                        rl.close();
-                        <br>
-                      });
-                      <br>
+                    <br>
+                    R = parseFloat(answerR);
+                    <br>
+                    rl.question("Ingrese el valor de la altura (H): ", (answerH) => {
+                    <br>
+                    H = parseFloat(answerH);
+                    <br>
+                    <br>
+                    // 4. Calcular el Volumen aplicando la fórmula
+                    <br>
+                    const volumen = Math.PI * Math.pow(R, 2) * H;
+                    <br>
+                    <br>
+
+                    // 5. Calcular el valor del área aplicando la fórmula respectiva
+                    <br>
+                    const area = 2 * Math.PI * R * (R + H);
+                    <br>
+                    <br>
+
+                    // 6. Escribir el valor del área y del volumen en la consola
+                    <br>
+                    console.log("El área del cilindro es: " + area.toFixed(2));
+                    <br>
+                    console.log("El volumen del cilindro es: " + volumen.toFixed(2));
+                    <br>
+                    <br>
+
+                    // 7. Fin
+                    <br>
+                    rl.close();
+                    <br>
+                    });
+                    <br>
                     });
                 </p>
             </div>

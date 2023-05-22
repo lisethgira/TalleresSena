@@ -119,13 +119,143 @@
 
         <div class="card">
             <div class="m-4">
-                <p>Aquí va la solución del ejercicio 2</p>
+                <p class="my-2">*Desarrolle un algoritmo que permita leer dos valores distintos, determinar cual de los
+                    dos valores es el mayor y escribirlo.</p>
             </div>
+
+            <center>
+                <div class="card border-light mx-4" style="max-width: 40rem;">
+                    <img class="" src="../src/images/ejercicios/ejercicio2.png" alt="ejercicio 1">
+                </div>
+            </center>
+
+            <div class="m-4">
+                <h3>Comparador de valores</h3>
+
+                <div class="form-group my-2">
+                    <label class="form-label">Ingrese los datos</label>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="valorA" placeholder="Valor A"
+                            data-listener-added_5f298116="true">
+                        <label for="radio">Valor A</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="valorB" placeholder="Valor B"
+                            data-listener-added_5f298116="true">
+                        <label for="altura">Valor B</label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-lg" onclick="compararValores()">Calcular</button>
+
+                <div class="resultado-container my-3">
+                    <div class="row">
+                        <p class="col-sm-2">Resultado:</p>
+                        <div class="col-sm-10">
+                            <p><span id="resultado"></span></p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="mx-4">
+                <h4 class="my-2">Algoritmo</h4>
+                <p class="my-2">si deseas ver en consola la solución del algoritmo en un archivo javascript llamado
+                    <b>ejercicio1.js</b> ingresa el siguiente código y ejecuta el comando <b> node ejercicio1.js.</b>
+                </p>
+                <p>
+                    const readline = require('readline');
+                </p>
+                <p>
+                    const rl = readline.createInterface({
+                    <br>
+                    input: process.stdin,
+                    <br>
+                    output: process.stdout
+                    <br>
+                    });
+                </p>
+                <p>
+                    function calcularAreaVolumen() {
+                    <br>
+                    <b>//Obtener los valores del radio y la altura del formulario</b>
+                    <br>
+                    let radio = parseFloat(document.getElementById("radio").value);
+                    <br>
+                    let altura = parseFloat(document.getElementById("altura").value);
+                    <br>
+                    <br>
+                    <b>// Calcular el volumen y el área</b>
+                    <br>
+                    let volumen = Math.PI * Math.pow(radio, 2) * altura;
+                    <br>
+                    let area = 2 * Math.PI * radio * (radio + altura);
+                    <br>
+                    <br>
+                    <b>// Mostrar los resultados en los elementos de salida</b>
+                    <br>
+                    document.getElementById("resultadoArea").textContent = area.toFixed(2);
+                    <br>
+                    document.getElementById("resultadoVolumen").textContent = volumen.toFixed(2);
+                    <br>
+                    }
+                </p>
+                <p>
+                    // 1. Inicio
+                    <br>
+                    // 2. Declaración de variables R=0, H=0
+                    <br>
+                    let R = 0;
+                    <br>
+                    let H = 0;
+                </p>
+                <p>
+                    // 3. Leer el valor de Radio (R) y Altura (H)
+                    <br>
+                    rl.question("Ingrese el valor del radio (R): ", (answerR) => {
+                    <br>
+                    R = parseFloat(answerR);
+                    <br>
+                    rl.question("Ingrese el valor de la altura (H): ", (answerH) => {
+                    <br>
+                    H = parseFloat(answerH);
+                    <br>
+                    <br>
+                    // 4. Calcular el Volumen aplicando la fórmula
+                    <br>
+                    const volumen = Math.PI * Math.pow(R, 2) * H;
+                    <br>
+                    <br>
+
+                    // 5. Calcular el valor del área aplicando la fórmula respectiva
+                    <br>
+                    const area = 2 * Math.PI * R * (R + H);
+                    <br>
+                    <br>
+
+                    // 6. Escribir el valor del área y del volumen en la consola
+                    <br>
+                    console.log("El área del cilindro es: " + area.toFixed(2));
+                    <br>
+                    console.log("El volumen del cilindro es: " + volumen.toFixed(2));
+                    <br>
+                    <br>
+
+                    // 7. Fin
+                    <br>
+                    rl.close();
+                    <br>
+                    });
+                    <br>
+                    });
+                </p>
+            </div>
+
         </div>
     </div>
 
     <script src="../main.js"></script>
-    <script src="ejercicio2.js"></script>
+    <script src="../js/ejercicio2.js"></script>
 
 </body>
 
