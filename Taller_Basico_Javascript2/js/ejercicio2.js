@@ -30,7 +30,7 @@ function solicitarValores() {
   });
 }
 
-solicitarValores();
+
 
 function compararValores() {
     const valorA = parseInt(document.getElementById('valorA').value);
@@ -40,7 +40,9 @@ function compararValores() {
       document.getElementById('resultado').textContent = 'Ingrese valores numéricos válidos.';
     } else {
       if (valorA === valorB) {
-        document.getElementById('resultado').textContent = 'Los valores deben ser distintos. Ingrese los datos nuevamente';
+        document.getElementById('resultado').textContent = 'Los valores deben ser distintos.';
+        document.getElementById('valorA').value = '';
+        document.getElementById('valorB').value = '';
       } else if (valorA > valorB) {
         document.getElementById('resultado').textContent = valorA + ' es el mayor.';
       } else {
@@ -49,8 +51,8 @@ function compararValores() {
     }
   }
 
-
-
+  solicitarValores();
+  compararValores();
 
 
 
